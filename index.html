@@ -1,83 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
-
-  <meta charset='UTF-8'>
+  <meta charset='UTF-8'> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="img/website.ico">
-  <meta name="description" content="YourDescriptionHere">
-  <meta name="author" content="YourStudentID">
-
-  <title>John Doe - Business Administration</title>
-
-  <!-- Bootstrap core CSS -->
+  <meta name="description" content="郭嘉毅 - 通信软件技术专业，专注于通信软件开发与优化。">
+  <title>郭嘉毅 - 通信软件技术</title>
+  <!-- Bootstrap 核心 CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
+  <!-- 本模板的自定义字体 -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
+  <!-- 本模板的自定义样式 -->
   <link href="css/resume.min.css" rel="stylesheet">
+  <style>
+    /* 定义淡入动画 */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
+    .resume-item {
+      /* 隐藏初始状态 */
+      opacity: 0;
+      /* 应用动画 */
+      animation: fadeIn 1s ease-out forwards; 
+    }
+
+    /* 为每个项目添加延迟 */
+    .resume-item:nth-child(1) { animation-delay: 0.2s; }
+    .resume-item:nth-child(2) { animation-delay: 0.4s; }
+    .resume-item:nth-child(3) { animation-delay: 0.6s; }
+    .resume-item:nth-child(4) { animation-delay: 0.8s; }
+    .resume-item:nth-child(5) { animation-delay: 1s; }
+    .resume-item:nth-child(6) { animation-delay: 1.2s; }
+  </style>
 </head>
 
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">John Doe</span>
+      <span class="d-block d-lg-none">郭嘉毅</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profilepicture.png" alt="Profile Picture">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profilepicture.png" alt="个人头像">
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="切换导航">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger" href="#about">关于我</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          <a class="nav-link js-scroll-trigger" href="#experience">工作经历</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          <a class="nav-link js-scroll-trigger" href="#education">教育背景</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          <a class="nav-link js-scroll-trigger" href="#portfolio">项目经历</a>
         </li>
       </ul>
     </div>
-  </div>
   </nav>
 
   <div class="container-fluid p-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
-        <h1 class="mb-3">John Doe
-        </h1>
-        <div class="subheading mb-5">Business Administration📚</div>
-        <p class="lead mb-4">Enter bio here<br><br>
-
-        Enter bio here<br><br>
-
-        Enter bio here
-        </p>
+        <h1 class="mb-3">郭嘉毅</h1>
+        <div class="subheading mb-5">居住地 | 广东深圳</div>
+        <div class="subheading mb-5">电话 | 13530035846</div>
+        <div class="subheading mb-5">邮箱 | 1176356383@qq.com</div>
+        <p class="lead mb-4">我是郭嘉毅，就读于深圳职业技术大学通信软件技术专业。在校期间，我积极学习专业知识，参与多个项目实践，积累了丰富的通信软件开发与调试经验。<br><br>
+        我对通信领域充满热情，致力于将所学知识应用到实际项目中，不断提升自己的技术能力和解决问题的能力。熟练掌握Java、Python等编程语言，熟悉通信网络架构和软件开发流程，具备良好的团队协作能力和创新思维。<br><br>
+        希望未来能在通信软件行业中继续深耕，为行业发展贡献自己的力量。</p>
         <div class="social-icons">
-          <a target="_blank" id="socialicon-1" href="https://linkedin.com">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a target="_blank" id="socialicon-2" href="https://github.com">
+          
+          <a target="_blank" id="socialicon-2" href="https://github.com/guojiayi2004">
             <i class="fab fa-github"></i>
           </a>
-          <a target="_blank" id="socialicon-3" href="https://twitter.com">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a target="_blank" id="socialicon-4" href="mailto:youremail@gmail.com">
+          
+          <a target="_blank" id="socialicon-4" href="mailto:1176356383@qq.com">
             <i class="fa fa-envelope"></i>
           </a>
         </div>
@@ -88,100 +102,64 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
+        <h2 class="mb-5">工作经历</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 experience">
           <div class="resume-content">
-            <h3 class="mb-0">Developer</h3>
-            <div class="subheading mb-3"><a target="_blank" href="https://yourcompany.com">Company</a></div>
+            <h3 class="mb-0">通信软件实习生</h3>
+            <div class="subheading mb-3"><a target="_blank" href="https://www.huawei.com">华为有限公司</a></div>
             <p>
-              • Developed websites for company X<br> 
-              • Speaker at hack-a-thons<br>
-              • Experience with HTML, CSS, Javascript, Photoshop<br>
+              • 参与公司通信软件项目的模块开发，负责部分功能的代码编写与调试，确保模块的稳定性和高效性。<br>
+              • 协助团队进行软件测试，定位并解决软件中的bug，优化软件性能。<br>
+              • 学习并掌握公司内部的通信软件开发流程和规范，参与项目文档的编写。<br>
+              • 与团队成员密切合作，完成软件模块的集成与部署工作，提升团队开发效率。
             </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">March 2019 - Present</span>
+            <span class="text-primary">2024 年 7 月 - 2025 年 1 月</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 experience">
           <div class="resume-content">
-            <h3 class="mb-0">Cashier</h3>
-            <div class="subheading mb-3"><a target="_blank" href="https://wholefoods.com">Whole Foods</a></div>
+            <h3 class="mb-0">校园项目志愿者</h3>
+            <div class="subheading mb-3"><a target="_blank" href="https://www.szpu.edu.cn/">深圳职业技术大学</a></div>
             <p>
-              • Responsible for checking out customers<br>
-              • etc etc<br>
+              • 参与学校通信实验室的项目，协助老师进行实验设备的调试与维护，确保实验室设备的正常运行。<br>
+              • 为低年级同学分享通信软件技术学习经验，组织技术交流活动，提升同学们的学习兴趣和实践能力。<br>
+              • 参与实验室的科研项目，协助完成通信网络优化和软件开发任务，积累了丰富的实践经验。
             </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">March 2017 - March 2019</span>
+            <span class="text-primary">2023 年 9 月 - 2024 年 6 月</span>
           </div>
         </div>
-
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 experience">
-          <div class="resume-content">
-            <h3 class="mb-0">Teaching Assistant</h3>
-            <div class="subheading mb-3"><a target="_blank" href="https://ucr.edu">University of California Riverside</a></div>
-            <p>
-            • Ran sessions to help students learn how to code<br>
-            • Reviewed and graded student coding projects<br>
-            • Created educational content to help promote student education<br>
-            • TA'd for over 400 students each academic quarter<br>
-
-          </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2011 - January 2016</span>
-          </div>
-        </div>
-
-
-
       </div>
-
     </section>
 
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
-        <h2 class="mb-5">Education</h2>
+        <h2 class="mb-5">教育背景</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 education">
           <div class="resume-content">
-            <h3 class="mb-0">UC Riverside</h3>
-            <div class="subheading mb-3">Masters of Business Administration</div>
-            <div>MBA in International Business</div>
+            <h3 class="mb-0">深圳职业技术大学</h3>
+            <div class="subheading mb-3">通信软件技术</div>
+            <div>专科 - 2026 年毕业</div>
+            <div>相关课程：通信原理、数据结构、Java 程序设计、移动通信技术、Python 编程、计算机网络、软件工程、数据库原理与应用</div>
+            <div>奖项：<br>
+              • 2024 年度学校优秀学生奖学金二等奖<br>
+              • 2024 年全国职业院校技能大赛通信软件应用开发赛项省级三等奖<br>
+              • 2023 年校级优秀学生干部<br>
+              • 2024 年校级优秀团员
+            </div>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2018 - December 2019</span>
+            <span class="text-primary">2023 年 9 月 - 2026 年 6 月</span>
           </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 education">
-          <div class="resume-content">
-            <h3 class="mb-0">University of California Riverside</h3>
-            <div class="subheading mb-3">Postgraduate Certificate in Business Management</div>
-            <div>Project Management</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2017</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 education">
-          <div class="resume-content">
-            <h3 class="mb-0">University of California Riverside</h3>
-            <div class="subheading mb-3">Business Administration</div>
-            <div>Information Systems</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2012 - May 2016</span>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -189,26 +167,110 @@
 
     <section class="resume-section p-1 p-lg-5 d-flex align-items-center" id="portfolio">
       <div class="w-100">
-        <h2 class="mb-5">Portfolio</h1>
-        <center>
-            <img src="img/image2.jpeg" width="500px">
-        </center>
+        <div class="subheading mb-3">项目经历</div>
+
+        <!-- 项目3 -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 education">
+          <div class="resume-content">
+            <h3 class="mb-0">5G通信技术研究与应用</h3>
+            <p>
+              • 参与5G通信技术的研究项目，分析5G网络架构及其在物联网中的应用。<br>
+              • 使用Python和MATLAB进行5G信号处理和网络仿真，优化信号传输效率。<br>
+              • 提出了一种基于5G的低延迟通信方案，应用于工业自动化场景，显著提升了系统的实时性。<br>
+              • 项目成果在学术会议上发表，获得了专家的高度评价。
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2024 年 4 月 - 2024 年 8 月</span>
+          </div>
+        </div>
+
+        <!-- 项目5 -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 education">
+          <div class="resume-content">
+            <h3 class="mb-0">物联网设备通信模块开发</h3>
+            <p>
+              • 设计并实现了一款用于物联网设备的通信模块，支持多种通信协议（如MQTT、CoAP）。<br>
+              • 使用C++和Python编写了模块的驱动程序和应用程序接口（API），确保模块能够与不同类型的物联网设备兼容。<br>
+              • 通过实验室测试，验证了模块的稳定性和可靠性，能够在复杂的网络环境下正常工作。<br>
+              • 项目成果被应用于学校的物联网实验室，为后续的科研项目提供了技术支持。
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2023 年 10 月 - 2024 年 3 月</span>
+          </div>
+        </div>
+
+        <!-- 项目1 -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 education">
+          <div class="resume-content">
+            <h3 class="mb-0">智能家居通信系统开发</h3>
+            <p>
+              • 负责设计和实现智能家居设备的通信协议，确保设备之间能够高效、稳定地传输数据。<br>
+              • 使用Python和Java开发了智能家居系统的后端服务，实现了设备控制、数据采集和用户管理等功能。<br>
+              • 通过Wi-Fi和蓝牙技术，实现了智能家居设备与手机APP的无缝连接。<br>
+              • 项目成果在校园科技展中展示，获得了师生的一致好评。
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2023 年 9 月 - 2024 年 1 月</span>
+          </div>
+        </div>
+
+        <!-- 项目2 -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 education">
+          <div class="resume-content">
+            <h3 class="mb-0">校园网络优化项目</h3>
+            <p>
+              • 参与校园网络的性能评估，分析网络延迟、丢包率等关键指标。<br>
+              • 提出并实施了网络优化方案，包括路由器配置优化、带宽分配调整和无线信号覆盖增强。<br>
+              • 通过优化，将校园网络的平均延迟降低了30%，提升了师生的网络使用体验。<br>
+              • 撰写了详细的项目报告，总结了优化过程和成果。
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2023 年 3 月 - 2023 年 7 月</span>
+          </div>
+        </div>
+
+        <!-- 项目3 -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 education">
+          <div class="resume-content">
+            <h3 class="mb-0">基于Python的通信数据分析工具</h3>
+            <p>
+              • 开发了一款用于分析通信网络流量数据的Python工具，能够实时监测网络流量、识别异常流量并生成报告。<br>
+              • 使用Matplotlib和Seaborn库，实现了数据可视化功能，方便用户直观地查看网络流量趋势。<br>
+              • 工具在学校的网络实验室中得到应用，帮助教师和学生更好地理解通信网络的实际运行情况。
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2022 年 10 月 - 2023 年 2 月</span>
+          </div>
+        </div>
+
+        <!-- 项目4 -->
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 education">
+          <div class="resume-content">
+            <h3 class="mb-0">移动应用开发项目</h3>
+            <p>
+              • 参与开发一款基于Android平台的移动应用，功能包括即时通讯、文件共享和任务管理。<br>
+              • 负责应用的后端开发，使用Java和MySQL搭建了服务器端架构，实现了用户认证、数据存储和消息推送等功能。<br>
+              • 与前端开发团队紧密合作，确保应用的性能和用户体验。<br>
+              • 项目最终在Google Play商店上线，获得了良好的用户评价。
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2022 年 6 月 - 2022 年 9 月</span>
+          </div>
+        </div>
+
+       
+          <div class="resume-date text-md-right">
+            <!-- 需补充该项目时间 -->
+            <span class="text-primary"></span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <hr class="m-0">
-    <center>&copy; <script type="text/javascript">
-  document.write(new Date().getFullYear());
-  </script> John Doe</center><br>
-  </div>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-</body>
-</html>
+<!-- ... -->              
